@@ -6,8 +6,8 @@
   options,
   ...
 }: let
-  username = "Vivek";
-  userDescription = "Vivke Sharma";
+  username = "vivek";
+  userDescription = "Vivek Sharma";
   homeDirectory = "/home/${username}";
   hostName = "rudra";
   timeZone = "Asia/Kolkata";
