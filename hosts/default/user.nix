@@ -1,8 +1,8 @@
 { lib, config, pkgs, ... }:
 
 let
-  userName = "vasu";
-  userDescription = "Vasu Jain";
+  userName = "vivek";
+  userDescription = "Vivek Sharma";
 in
 {
   options = {

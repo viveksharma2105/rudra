@@ -312,11 +312,11 @@
       "locked": {
         "lastModified": 1735289743,
         "narHash": "sha256-a/jKYTRNadNERbmrWsreA954Yuh3Ey1Pga/lUbks6G4=",
-        "path": "/home/vasu/rudra/modules/nixCats",
+        "path": "/home/vivek/rudra/modules/nixCats",
         "type": "path"
       },
       "original": {
-        "path": "/home/vasu/rudra/modules/nixCats",
+        "path": "/home/vivek/rudra/modules/nixCats",
         "type": "path"
       }
     },
