@@ -15,8 +15,6 @@ in {
   imports = [
     ./hardware-configuration.nix
     ./user.nix
-    ../../modules/nvidia-drivers.nix
-    ../../modules/nvidia-prime-drivers.nix
     ../../modules/intel-drivers.nix
     inputs.home-manager.nixosModules.default
   ];
