@@ -8,10 +8,10 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixCats = {
-      url = "path:/home/vivek/rudra/modules/nixCats";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nixCats = {
+    #   url = "path:/home/vivek/rudra/modules/nixCats";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     ghostty = {
       url = "github:ghostty-org/ghostty";
@@ -22,7 +22,7 @@
   outputs = {
     self,
     nixpkgs,
-    nixCats,
+    # nixCats,
     ghostty,
     ...
   } @ inputs: {
