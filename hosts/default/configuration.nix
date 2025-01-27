@@ -185,7 +185,7 @@ in {
     nano
     vscode
     zed-editor
-    jetbrains.idea-ultimate
+    # jetbrains.idea-ultimate
 
     # Zen Browser from custom input
     inputs.zen-browser.packages."${system}".default
@@ -246,7 +246,7 @@ in {
     exfatprogs
 
     # inputs.nixCats.packages.${pkgs.system}.nvim
-    inputs.ghostty.packages.${pkgs.system}.default
+    # inputs.ghostty.packages.${pkgs.system}.default
 
     # File management and archives
     yazi

@@ -302,39 +302,6 @@
         "type": "github"
       }
     },
-    "nixCats": {
-      "inputs": {
-        "nixCats": "nixCats_2",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1735289743,
-        "narHash": "sha256-a/jKYTRNadNERbmrWsreA954Yuh3Ey1Pga/lUbks6G4=",
-        "path": "/home/vivek/rudra/modules/nixCats",
-        "type": "path"
-      },
-      "original": {
-        "path": "/home/vivek/rudra/modules/nixCats",
-        "type": "path"
-      }
-    },
-    "nixCats_2": {
-      "locked": {
-        "lastModified": 1735395058,
-        "narHash": "sha256-/SqVdchMmzcDJhGoZnTQDtGF+MnVh5cAWa06b6swG7E=",
-        "owner": "BirdeeHub",
-        "repo": "nixCats-nvim",
-        "rev": "3f3f3e9ea4e9b69735e06a757eca19ce06a25f80",
-        "type": "github"
-      },
-      "original": {
-        "owner": "BirdeeHub",
-        "repo": "nixCats-nvim",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1736344531,
@@ -419,7 +386,6 @@
       "inputs": {
         "ghostty": "ghostty",
         "home-manager": "home-manager",
-        "nixCats": "nixCats",
         "nixpkgs": "nixpkgs",
         "stylix": "stylix",
         "zen-browser": "zen-browser"
