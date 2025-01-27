@@ -266,6 +266,7 @@ in {
     auto-cpufreq
     nvtopPackages.nvidia
     anydesk
+    rustdesk-flutter
 
     # Network and internet tools
     aria2
