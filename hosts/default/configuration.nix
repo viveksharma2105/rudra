@@ -185,7 +185,7 @@ in {
     nano
     vscode
     zed-editor
-    # jetbrains.idea-ultimate
+    jetbrains.idea-community-bin
 
     # Zen Browser from custom input
     inputs.zen-browser.packages."${system}".default
