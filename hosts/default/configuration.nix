@@ -561,15 +561,15 @@ in {
 
   xdg.mime.defaultApplications = {
     # Web and HTML
-    "x-scheme-handler/http" = "zen.desktop";
-    "x-scheme-handler/https" = "zen.desktop";
-    "x-scheme-handler/chrome" = "zen.desktop";
-    "text/html" = "zen.desktop";
-    "application/x-extension-htm" = "zen.desktop";
-    "application/x-extension-html" = "zen.desktop";
-    "application/x-extension-shtml" = "zen.desktop";
-    "application/x-extension-xhtml" = "zen.desktop";
-    "application/xhtml+xml" = "zen.desktop";
+    "x-scheme-handler/http" = "firefox.desktop";
+    "x-scheme-handler/https" = "firefox.desktop";
+    "x-scheme-handler/chrome" = "firefox.desktop";
+    "text/html" = "firefox.desktop";
+    "application/x-extension-htm" = "firefox.desktop";
+    "application/x-extension-html" = "firefox.desktop";
+    "application/x-extension-shtml" = "firefox.desktop";
+    "application/x-extension-xhtml" = "firefox.desktop";
+    "application/xhtml+xml" = "firefox.desktop";
 
     # File management
     "inode/directory" = "org.kde.dolphin.desktop";
@@ -596,15 +596,15 @@ in {
     "application/vnd.openxmlformats-officedocument.presentationml.presentation" = "libreoffice-impress.desktop";
 
     # PDF
-    "application/pdf" = "zen.desktop";
+    "application/pdf" = "firefox.desktop";
 
     # Torrents
     "application/x-bittorrent" = "org.qbittorrent.qBittorrent.desktop";
     "x-scheme-handler/magnet" = "org.qbittorrent.qBittorrent.desktop";
 
     # Other handlers
-    "x-scheme-handler/about" = "zen.desktop";
-    "x-scheme-handler/unknown" = "zen.desktop";
+    "x-scheme-handler/about" = "firefox.desktop";
+    "x-scheme-handler/unknown" = "firefox.desktop";
     "x-scheme-handler/postman" = "Postman.desktop";
     "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
   };
