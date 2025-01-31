@@ -9,7 +9,7 @@
   username = "vivek";
   userDescription = "Vivek Sharma";
   homeDirectory = "/home/${username}";
-  hostName = "rudra";
+  hostName = "viri";
   timeZone = "Asia/Kolkata";
 in {
   imports = [
@@ -26,6 +26,14 @@ in {
     kernel.sysctl = {
       "vm.max_map_count" = 2147483642;
     };
+    kernelParams = [
+      "intel_pstate=active"
+      "i915.enable_psr=1" # Panel self refresh
+      "i915.enable_fbc=1" # Framebuffer compression
+      "i915.enable_dc=2" # Display power saving
+      "nvme.noacpi=1" # Helps with NVME power consumption
+    ];
+
     loader = {
       efi = {
         canTouchEfiVariables = true;
@@ -51,6 +59,15 @@ in {
       magicOrExtension = ''\x7fELF....AI\x02'';
     };
     plymouth.enable = true;
+  };
+
+  # Environment variables for Hyprland + Intel
+  environment.sessionVariables = {
+    LIBVA_DRIVER_NAME = "iHD";
+    VDPAU_DRIVER = "va_gl";
+    __GLX_VENDOR_LIBRARY_NAME = "mesa";
+    WLR_NO_HARDWARE_CURSORS = "1"; # In case of cursor issues
+    NIXOS_OZONE_WL = "1"; # For better Electron apps support
   };
 
   networking = {
@@ -454,7 +471,21 @@ in {
       enable = true;
       drivers = [pkgs.hplipWithPlugin];
     };
-    auto-cpufreq.enable = true;
+    power-profiles-daemon.enable = false;
+    thermald.enable = true;
+    auto-cpufreq = {
+      enable = true;
+      settings = {
+        battery = {
+          governor = "powersave";
+          turbo = "never";
+        };
+        charger = {
+          governor = "performance";
+          turbo = "auto";
+        };
+      };
+    };
     gnome.gnome-keyring.enable = true;
     avahi = {
       enable = true;
@@ -516,6 +547,8 @@ in {
     pulseaudio.enable = false;
     graphics.enable = true;
   };
+
+  powerManagement.powertop.enable = true;
 
   services.blueman.enable = true;
 
