@@ -456,7 +456,7 @@ in {
       enable = true;
     };
     libinput.enable = true;
-    upower.enable = true;
+    # upower.enable = true;
     fstrim.enable = true;
     gvfs.enable = true;
     openssh.enable = true;
